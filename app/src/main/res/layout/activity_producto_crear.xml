@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_producto_crear"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Campo para el ID del Producto -->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="ID del Producto"-->
+<!--            android:textStyle="bold"-->
+<!--            android:paddingBottom="4dp" />-->
+<!--        <EditText-->
+<!--            android:id="@+id/etIdProducto"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number"-->
+<!--            android:hint="Ingrese el ID del Producto" />-->
+
+        <!-- Campo para el Nombre del Producto -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Producto"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp" />
+        <EditText
+            android:id="@+id/etNombreProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Ingrese el Nombre del Producto" />
+
+        <!-- Campo para la Descripción del Producto -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción del Producto"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp" />
+        <EditText
+            android:id="@+id/etDescripcionProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:hint="Ingrese la Descripción del Producto" />
+
+        <!-- Campo para la Categoría del Producto -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categoría del Producto"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp" />
+        <Spinner
+            android:id="@+id/spinnerCategoriaProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Campo para el Stock del Producto -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stock del Producto"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp" />
+        <EditText
+            android:id="@+id/etStockProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Ingrese el Stock del Producto" />
+
+        <!-- Campo para la Ubicación del Producto -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubicación del Producto"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp" />
+        <EditText
+            android:id="@+id/etUbicacionProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Ingrese la Ubicación del Producto" />
+
+        <!-- Campo para la Fecha de Caducidad del Producto -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de Caducidad del Producto"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp" />
+        <EditText
+            android:id="@+id/etFechaCaducidadProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="Ingrese la Fecha de Caducidad del Producto" />
+
+        <!-- Botón para Enviar el Formulario -->
+        <Button
+            android:id="@+id/btnGuardarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Producto"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+
+</ScrollView>
